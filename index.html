@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>精灵图的使用方法</title>
+    <style>
+      body {
+        background-image: url(images/bgc.webp);
+      }
+      .footer {
+        width: 760px; /*宽度是300px */
+        height: 240px; /*高度是200px */
+        /* background-color: #ff6633; */
+        margin: 200px auto;
+      }
+      .west {
+        float: left;
+        width: 190px;
+        height: 240px;
+        /* background-color: #85e47a; */
+        background-repeat: no-repeat; /*设置图片的平铺方式*/
+        background-position-x: 0px; /*背景图片的位置 */
+        background-position-y: center;
+      }
+      .west:nth-child(1) {
+        background-image: url(images/west_01.png);
+        /* 绑定动画的名称  从开始到结束所持续的时间  动画持续的脚步   动画持续的次数 infinite为无限次*/
+        animation: west1 1.4s steps(8) infinite;
+      }
+      .west:nth-child(2) {
+        background-image: url(images/west_02.png);
+        animation: west2 1.4s steps(8) infinite;
+      }
+      .west:nth-child(3) {
+        background-image: url(images/west_03.png);
+        animation: west3 1.4s steps(8) infinite;
+      }
+      .west:nth-child(4) {
+        background-image: url(images/west_04.png);
+        animation: west4 1.4s steps(8) infinite;
+      }
+      @keyframes west1 {
+        /* 写当前动画的过程 */
+        0% {
+          /* 动画开始的过程 */
+          background-position-x: 0px;
+        }
+        100% {
+          /* 动画结束的过程 */
+          background-position-x: -1600px;
+        }
+      }
+      @keyframes west2 {
+        /* 写当前动画的过程 */
+        0% {
+          /* 动画开始的过程 */
+          background-position-x: 0px;
+        }
+        100% {
+          /* 动画结束的过程 */
+          background-position-x: -1600px;
+        }
+      }
+      @keyframes west3 {
+        /* 写当前动画的过程 */
+        0% {
+          /* 动画开始的过程 */
+          background-position-x: 0px;
+        }
+        100% {
+          /* 动画结束的过程 */
+          background-position-x: -1360px;
+        }
+      }
+      @keyframes west4 {
+        /* 写当前动画的过程 */
+        0% {
+          /* 动画开始的过程 */
+          background-position-x: 0px;
+        }
+        100% {
+          /* 动画结束的过程 */
+          background-position-x: -1680px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="west"></div>
+      <div class="west"></div>
+      <div class="west"></div>
+      <div class="west"></div>
+    </div>
+  </body>
+</html>
