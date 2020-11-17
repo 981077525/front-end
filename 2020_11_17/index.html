@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用表格布局写的一个用户注册表</title>
+  </head>
+  <body>
+    <form action="user.php" method="get" name="register">
+      <table width="600px" align="center">
+        <caption>
+          <h2>用户注册表</h2>
+        </caption>
+        <!-- 第一行 -->
+        <tr>
+          <td>姓名</td>
+          <td>
+            <input type="text" name="name" value="请输入你的姓名" />
+          </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+          <td>性别</td>
+          <td>
+            <label><input type="radio" name="sex" />男</label>
+            <label><input type="radio" name="sex" />女</label>
+            <label><input type="radio" name="sex" />保密</label>
+          </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+          <td>生日</td>
+          <td>
+            <select>
+              <option>--请选择你的年份--</option>
+              <option>2020年</option>
+              <option>2019年</option>
+              <option>2018年</option>
+              <option>2017年</option>
+            </select>
+            <select>
+              <option>--请选择你的月份--</option>
+              <option>1月</option>
+              <option>2月</option>
+              <option>3月</option>
+              <option>4月</option>
+            </select>
+            <select>
+              <option>--请选择你的日子--</option>
+              <option>1号</option>
+              <option>2号</option>
+              <option>3号</option>
+              <option>4号</option>
+            </select>
+          </td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+          <td>所在地区</td>
+          <td>
+            <input type="text" name="address" value="请输入你的家庭地址" />
+          </td>
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+          <td>婚姻状况</td>
+          <td>
+            <label><input type="radio" name="marriage" />已婚</label>
+            <label><input type="radio" name="marriage" />未婚</label>
+            <label><input type="radio" name="marriage" />保密</label>
+          </td>
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+          <td>手机号码：</td>
+          <td><input type="text" name="tel" value="请输入你的手机号码" /></td>
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+          <td>喜好</td>
+          <td>
+            <label><input type="checkbox" name="like" />打麻将</label>
+            <label><input type="checkbox" name="like" />看书</label>
+            <label><input type="checkbox" name="like" />游泳</label>
+            <label><input type="checkbox" name="like" />踢足球</label>
+          </td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+          <td>自我介绍</td>
+          <td>
+            <textarea name="myself" cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+        <!-- 第九行 -->
+        <tr>
+          <td></td>
+          <td><input type="submit" /><input type="reset" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
