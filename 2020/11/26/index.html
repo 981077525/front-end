@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS选择器</title>
+    <style>
+      /* 1.标签选择器 */
+      /* 
+        语法：
+        标签名 {
+            属性名称：值；
+        } 
+        */
+      body {
+        background-color: pink;
+      }
+      /* 2.类选择器 */
+      /*
+        语法：
+        .class{
+            属性名称：值;
+        }
+        */
+      .class {
+        font-size: 18px;
+      }
+      /* 3.id选择器
+        语法：
+        #id名{
+            属性名称：值;
+        } */
+      #username {
+        color: blueviolet;
+      }
+      /* 4.通用选择器
+        语法：
+        * {
+            属性名称：值;
+        } */
+      * {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class">这是一行字体大小为18像素的字</div>
+    <div id="username">这是一行颜色为blueviolet的字</div>
+  </body>
+</html>
