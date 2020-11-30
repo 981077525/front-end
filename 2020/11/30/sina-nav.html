@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>仿新浪网导航栏</title>
+    <style>
+      * {
+        /* 初始化边距 */
+        margin: 0;
+        padding: 0px;
+      }
+      a {
+        /* 设置为行内块元素 */
+        display: inline-block;
+        /* 取消下划线 */
+        text-decoration: none;
+        /* 设置文本颜色 */
+        color: #333;
+        /* 设置高度 */
+        height: 41px;
+        /* 设置标签之间的左右边距为10px上下边距为0px */
+        padding: 0 10px;
+        /* 设置文字大小 */
+        font-size: 12px;
+        /* 设置行号，使得垂直居中 */
+        line-height: 41px;
+      }
+      a:hover {
+        color: #ff8400;
+        background-color: #eee;
+      }
+
+      .nav {
+        /* 设置背景颜色 */
+        background-color: #fcfcfc;
+        /* 设置上边框 */
+        border-top: 3px solid #ff8400;
+        /* 设置下边框 */
+        border-bottom: 2px solid #efeef0;
+        /* 设置高度 */
+        height: 41px;
+        /* 设置水平居中 */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">设为首页</a>
+      <a href="#">手机新浪网</a>
+      <a href="#">移动客户端</a>
+      <a href="#">博客</a>
+      <a href="#">关注我</a>
+    </div>
+  </body>
+</html>
