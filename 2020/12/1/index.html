@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新闻列表</title>
+    <style>
+      /* 初始化全局的内边距和外边距 */
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      /* 设置盒子 */
+      .news {
+        /* 设置宽度 */
+        width: 240px;
+        /* 设高度 */
+        height: 304px;
+        /* 设置外边距，使之水平居中 */
+        margin: 30px auto;
+        /* 设置背景图片 默认为平铺*/
+        background-image: url(/images/bg.gif);
+        /* 设置内边距 */
+        padding: 10px;
+        /* 设置边框线的样式 */
+        border: darkgreen 1px solid;
+      }
+      .news h1 {
+        /* 设置标题的样式 */
+        /* 水平左居中 */
+        text-align: left;
+        /* 设置左边框的样式 */
+        border-left: #c9e143 solid 4px;
+        /* 设置字体样式 */
+        font-family: "黑体";
+        /* 设置字体大小 */
+        font-size: 20px;
+        /* 设置文字颜色 */
+        color: #fff;
+        /* 设置左外边距 */
+        padding-left: 5px;
+      }
+      .news ul {
+        /* 设置列表的背景颜色 */
+        background-color: #fff;
+        /* 设置外边距顶部 */
+        margin-top: 5px;
+        /* 设置内边距，左右为0px，上下为10像素 */
+        padding: 0px 10px;
+      }
+      .news li {
+        /* 去掉li标签前的点 */
+        list-style: none;
+        /* 给li标签前加一个背景样式 */
+        background: url("images/tb.gif") left no-repeat;
+      }
+      .news a {
+        /* 将a元素改为行内块元素，使他可以设置高度 */
+        display: inline-block;
+        /* 设置行高，达到使文字垂直居中的目的 */
+        line-height: 30px;
+        /* 取消下划线 */
+        text-decoration: none;
+        /* 设置下边框的样式 */
+        border-bottom: 1px dashed#666;
+        /* 设置文字颜色 */
+        color: #06c;
+        /* 设置文字大小 */
+        font-size: 12px;
+        /* 设置文字的首行缩进 */
+        text-indent: 1em;
+      }
+      .news a:hover {
+        /* 一个伪类，当鼠标移动上去的时候的样式 */
+        /* 增加下划线 */
+        text-decoration: underline;
+        /* 更改文字颜色 */
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="news">
+      <h1>爱宠知识</h1>
+      <ul>
+        <li><a href="#">养狗比养猫对健康更有利</a></li>
+        <li><a href="#">日本正宗柴犬亮相，你怎么看柴犬</a></li>
+        <li><a href="#">狗狗歌曲《新年旺旺》</a></li>
+        <li><a href="#">带宠兜风，开车带宠需要注意什么？</a></li>
+        <li><a href="#">【爆笑】这狗狗太不给力了</a></li>
+        <li><a href="#">狗狗与男童相同着装拍有爱造型照</a></li>
+        <li><a href="#">狗狗各个阶段健康大事件</a></li>
+        <li><a href="#">调皮宠物狗陷在沙发里的搞笑瞬间</a></li>
+        <li><a href="#">为什么每次大小便后，会用脚踢土？</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
