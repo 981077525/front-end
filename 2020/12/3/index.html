@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>float属性</title>
+    <title>float属性 - 仿小米商城</title>
     <style>
       .one {
         width: 1300px;
@@ -13,14 +13,14 @@
       }
       .two {
         float: left;
-        margin-left: 10px;
+        /* margin-left: 10px; */
         width: 300px;
         height: 700px;
         background-color: pink;
       }
       .three {
         float: left;
-        width: 300px;
+        width: 1000px;
         height: 700px;
         background-color: blue;
       }
@@ -32,19 +32,36 @@
         margin-top: -10px;
         margin-bottom: -10px;
       }
+      .three li {
+        list-style: none;
+        width: 230px;
+        height: 340px;
+        float: left;
+        background-color: #666777;
+        margin-left: 20px;
+      }
+      .top {
+        margin-bottom: 20px;
+      }
     </style>
   </head>
   <body>
     <div class="one">
       <div class="two">
         <a href="#">
-          <img
-            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/574c6643ab91c6618bfb2d0e2c761d0b.jpg?thumb=1&w=293&h=768&f=webp&q=90"
-            alt=""
-          />
+          <img src="./images/mi-banner.png" alt="" />
         </a>
       </div>
-      <div class="three"></div>
+      <div class="three">
+        <li class="top"></li>
+        <li class="top"></li>
+        <li class="top"></li>
+        <li class="top"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
     </div>
   </body>
 </html>
